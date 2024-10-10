@@ -1,0 +1,336 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #111111;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-family: "roboto";
+    
+}
+
+nav li a{
+    color: beige;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+nav li a:hover{
+    color: #8069e6;
+    text-decoration: none;
+    border: 2px solid #8069e6;
+}
+
+
+.logo{
+    padding: 0 15px;
+}
+.logo img{
+    width: 95px;
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+    
+}
+
+.iconos a {
+    margin: 0 10px;
+    color: #f0ecec;
+    font-size: 18px;
+}
+.iconos a:hover {
+   
+    color: #8069e6;
+    text-decoration: none;
+    
+}
+
+
+/* aquì se implementan los estilos css para la seccion uno*/
+
+.principal {
+    background-image: url('../imagen/devp_free.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidouno {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.contenidouno h1{
+    margin-top: 200px;
+    margin-bottom: 15px;
+    font-family: "Oswald";
+    color: #000000;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.contenidouno h2{
+    margin-bottom: 15px;
+    font-family: "Oswald";
+    color: #000000;
+}
+
+.contenidouno p{
+    margin-bottom: 30px;
+    font-family: "Edu AU VIC WA NT Guides";
+    color: #000000;
+    font-weight: bolder;
+}
+.contenidouno p:hover{
+    margin-bottom: 30px;
+    font-family: "Edu AU VIC WA NT Guides";
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+.buttons {
+    display: flex;
+    justify-content:center;
+    margin-top: 50px;
+
+}
+
+.button {
+    background-color: #000000;;
+    color: white;
+    padding: 25px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 5 30px;
+}
+
+.button:hover {
+    background-color: #8069e6;
+    color: #000000;
+    padding: 25px 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 5 30px;
+}
+
+
+/*estilos para el contenido dos*/
+
+.banner {
+    background-image: url('../imagen/dev02.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenidodos {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.contenidodos h2{
+    margin-top: 100px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 50px;
+    border: 1px solid white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: "roboto";
+   
+}
+
+
+.figuras {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.figuras a {
+    margin: 0 10px;
+    color: #faf7f7;
+    font-size: 18px;
+}
+.figuras a:hover {
+   
+    color: #8069e6;
+    
+}
+
+
+
+
+/* Estilos de la tercera sección - Galería */
+.galeria {
+    background-color: #000000;
+    padding: 50px 0;
+    border-radius: 5px;
+    min-height: 600px; /* Ajustado para evitar superposición con el footer */
+}
+
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3388e9;
+}
+
+.galeria p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-bottom: 20px; /* Ajustado para darle mayor espacio */
+    font-family: 'Arial Narrow';
+}
+
+.contenidotres {
+    max-width: 900px; /* Ampliado para mejor distribución del contenido */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; /* Se permite el ajuste en pantallas más pequeñas */
+    justify-content: space-between; /* Separación entre las columnas */
+    gap: 20px; /* Espaciado entre columnas */
+}
+
+.contenidotres .columna {
+    flex: 1;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial Narrow';
+}
+
+.contenidotres .columna img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #04416a;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.contenidotres .columna p {
+    margin-top: 15px;
+    text-align: justify;
+    line-height: 1.6em;
+}
+
+.contenidotres .columna a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8069e6;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.contenidotres .columna a:hover {
+    background-color: #0057b3bb;
+}
+
+
+
+  
+  /*creando el Footer - pie de pagina final de
+  la pagina*/
+  
+  .footer {
+    background-color: #8069e6;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .filas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  h3, p {
+    color: #fff;
+    margin: 0;
+  }
+  
+  .social-icons1 {
+    display: flex;
+  }
+  
+
+
+  /* Aquí puedes agregar tu CSS */
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #d5f0f4;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #000; /* Cambia esto según el color que desees para el hover */
+}
+  
+#texto1, #texto2, #texto3{
+    color: #8069e6;
+    font-family: "Times New Roman";
+    font-size: 11px;
+}
